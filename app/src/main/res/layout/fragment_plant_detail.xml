@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.PlantDetailFragment" >
+
+    <TextView
+        android:id="@+id/plantNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Plant"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/plantTypeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="..."
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toStartOf="@+id/plantNameTextView"
+        app:layout_constraintTop_toBottomOf="@+id/plantNameTextView" />
+
+    <TextView
+        android:id="@+id/wateringFrequencyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="..."
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toStartOf="@+id/plantTypeTextView"
+        app:layout_constraintTop_toBottomOf="@+id/plantTypeTextView" />
+
+    <TextView
+        android:id="@+id/plantingDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="..."
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintStart_toStartOf="@+id/wateringFrequencyTextView"
+        app:layout_constraintTop_toBottomOf="@+id/wateringFrequencyTextView" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="@color/delete"
+        android:text="Delete"
+        app:layout_constraintStart_toEndOf="@+id/editButton"
+        app:layout_constraintTop_toTopOf="@+id/editButton" />
+
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Edit"
+        app:layout_constraintStart_toStartOf="@+id/plantingDateTextView"
+        app:layout_constraintTop_toBottomOf="@+id/plantingDateTextView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

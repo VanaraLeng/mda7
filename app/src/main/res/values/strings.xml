@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Garden Journal</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="update">Update</string>
+    <string name="fragment_garden_log_title">Garden Log</string>
+</resources>
